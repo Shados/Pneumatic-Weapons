@@ -9,8 +9,8 @@
     "name": { "str": "pneumatic assault rifle" },
     "description": "A multistroke pneumatic rifle handcrafted from scrap.  It is very quiet and deadly.",
     "price": 240000,
-    "material": [ "steel", "wood" ],
-    "flags": [ "STR_RELOAD", "RELOAD_ONE", "NON-FOULING" ],
+    "material": ["steel", "wood"],
+    "flags": ["STR_RELOAD", "RELOAD_ONE", "NON-FOULING"],
     "skill": "rifle",
     "ammo": "pebble",
     "weight": "4211 g",
@@ -21,19 +21,22 @@
     "range": 15,
     "dispersion": 75,
     "durability": 7,
-    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 3 ] ],
+    "modes": [
+      ["DEFAULT", "semi-auto", 1],
+      ["AUTO", "auto", 3]
+    ],
     "clip_size": 15,
     "reload": 6000,
     "loudness": 18,
     "valid_mod_locations": [
-      [ "accessories", 4 ],
-      [ "grip", 1 ],
-      [ "mechanism", 4 ],
-      [ "sights", 1 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "rail mount", 1 ],
-      [ "underbarrel mount", 1 ]
+      ["accessories", 4],
+      ["grip", 1],
+      ["mechanism", 4],
+      ["sights", 1],
+      ["sling", 1],
+      ["stock", 1],
+      ["rail mount", 1],
+      ["underbarrel mount", 1]
     ]
   },
   {
@@ -46,8 +49,8 @@
     "name": { "str": "pneumatic bolt driver" },
     "description": "An eight-shot, revolving barrel, pneumatic bolt driver handcrafted from scrap.  It is very quiet and deadly.",
     "price": 290000,
-    "material": [ "steel", "wood" ],
-    "flags": [ "RELOAD_ONE", "STR_RELOAD", "NON-FOULING" ],
+    "material": ["steel", "wood"],
+    "flags": ["RELOAD_ONE", "STR_RELOAD", "NON-FOULING"],
     "skill": "rifle",
     "ammo": "bolt",
     "weight": "3110 g",
@@ -62,14 +65,14 @@
     "reload": 6000,
     "loudness": 22,
     "valid_mod_locations": [
-      [ "accessories", 4 ],
-      [ "grip", 1 ],
-      [ "mechanism", 4 ],
-      [ "sights", 1 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "rail mount", 1 ],
-      [ "underbarrel mount", 1 ]
+      ["accessories", 4],
+      ["grip", 1],
+      ["mechanism", 4],
+      ["sights", 1],
+      ["sling", 1],
+      ["stock", 1],
+      ["rail mount", 1],
+      ["underbarrel mount", 1]
     ]
   },
   {
@@ -82,8 +85,8 @@
     "name": { "str": "pneumatic shotgun" },
     "description": "A double-barreled pneumatic air shotgun handcrafted from scrap.  Though it's firepower is lacking compared to more conventional shotguns, this thing can still pack quite a punch.  That is, if your target is directly in front of you.",
     "price": 220000,
-    "material": [ "steel", "wood" ],
-    "flags": [ "RELOAD_ONE", "STR_RELOAD", "NON-FOULING" ],
+    "material": ["steel", "wood"],
+    "flags": ["RELOAD_ONE", "STR_RELOAD", "NON-FOULING"],
     "skill": "shotgun",
     "ammo": "shotcanister",
     "weight": "3410 g",
@@ -94,19 +97,22 @@
     "range": 3,
     "dispersion": 350,
     "durability": 7,
-    "modes": [ [ "DEFAULT", "single", 1 ], [ "DOUBLE", "double", 2 ] ],
+    "modes": [
+      ["DEFAULT", "single", 1],
+      ["DOUBLE", "double", 2]
+    ],
     "clip_size": 2,
     "reload": 6000,
     "loudness": 22,
     "valid_mod_locations": [
-      [ "accessories", 4 ],
-      [ "grip", 1 ],
-      [ "mechanism", 4 ],
-      [ "sights", 1 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "rail mount", 1 ],
-      [ "underbarrel mount", 1 ]
+      ["accessories", 4],
+      ["grip", 1],
+      ["mechanism", 4],
+      ["sights", 1],
+      ["sling", 1],
+      ["stock", 1],
+      ["rail mount", 1],
+      ["underbarrel mount", 1]
     ]
   },
   {
@@ -122,7 +128,7 @@
     "price": 75000,
     "to_hit": -2,
     "bashing": 10,
-    "material": [ "copper", "steel" ],
+    "material": ["copper", "steel"],
     "ammo": "nail",
     "skill": "rifle",
     "range": 12,
@@ -132,15 +138,15 @@
     "durability": 5,
     "ups_charges": 5,
     "valid_mod_locations": [
-      [ "accessories", 4 ],
-      [ "grip", 1 ],
-      [ "sights", 1 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "rail mount", 1 ],
-      [ "underbarrel mount", 1 ]
+      ["accessories", 4],
+      ["grip", 1],
+      ["sights", 1],
+      ["sling", 1],
+      ["stock", 1],
+      ["rail mount", 1],
+      ["underbarrel mount", 1]
     ],
-    "magazines": [ [ "nail", [ "nailmag" ] ] ]
+    "magazines": [["nail", ["nailmag"]]]
   },
   {
     "id": "heavy_rail_rifle",
@@ -154,7 +160,7 @@
     "price": 900000,
     "to_hit": -1,
     "bashing": 12,
-    "material": [ "steel", "plastic" ],
+    "material": ["steel", "plastic"],
     "symbol": "(",
     "color": "dark_gray",
     "ammo": "metal_rail",
@@ -167,17 +173,17 @@
     "ups_charges": 100,
     "reload": 200,
     "valid_mod_locations": [
-      [ "accessories", 4 ],
-      [ "emitter", 1 ],
-      [ "grip", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "underbarrel", 1 ]
+      ["accessories", 4],
+      ["emitter", 1],
+      ["grip", 1],
+      ["rail", 1],
+      ["sights", 1],
+      ["sling", 1],
+      ["stock", 1],
+      ["underbarrel", 1]
     ],
-    "ammo_effects": [ "INCENDIARY", "TRAIL" ],
-    "flags": [ "RELOAD_ONE" ]
+    "ammo_effects": ["INCENDIARY", "TRAIL"],
+    "flags": ["RELOAD_ONE"]
   },
   {
     "id": "rebar_rifle",
@@ -191,7 +197,7 @@
     "price": 550000,
     "to_hit": -3,
     "bashing": 10,
-    "material": [ "steel", "wood" ],
+    "material": ["steel", "wood"],
     "symbol": "(",
     "color": "brown",
     "ammo": "metal_rail",
@@ -202,15 +208,15 @@
     "ups_charges": 40,
     "reload": 200,
     "valid_mod_locations": [
-      [ "emitter", 1 ],
-      [ "grip", 1 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "sights", 1 ],
-      [ "rail mount", 1 ],
-      [ "underbarrel mount", 1 ]
+      ["emitter", 1],
+      ["grip", 1],
+      ["sling", 1],
+      ["stock", 1],
+      ["sights", 1],
+      ["rail mount", 1],
+      ["underbarrel mount", 1]
     ],
-    "ammo_effects": [ "INCENDIARY", "TRAIL" ]
+    "ammo_effects": ["INCENDIARY", "TRAIL"]
   },
   {
     "id": "mininuke_launcher",
@@ -222,8 +228,8 @@
     "name": { "str": "mininuke launcher" },
     "description": "A powerful handheld launcher handcrafted from scrap.  Made to launch modified handheld nuclear weapons, it is an exceedingly powerful weapon.",
     "price": 750000,
-    "material": [ "aluminum", "wood" ],
-    "flags": [ "STR_RELOAD", "NEVER_JAMS" ],
+    "material": ["aluminum", "wood"],
+    "flags": ["STR_RELOAD", "NEVER_JAMS"],
     "skill": "launcher",
     "ammo": "mininuke_mod",
     "weight": "11260 g",
@@ -235,6 +241,12 @@
     "durability": 7,
     "clip_size": 1,
     "reload": 800,
-    "valid_mod_locations": [ [ "sling", 1 ], [ "grip mount", 1 ], [ "rail mount", 1 ], [ "sights mount", 1 ], [ "underbarrel mount", 1 ] ]
+    "valid_mod_locations": [
+      ["sling", 1],
+      ["grip mount", 1],
+      ["rail mount", 1],
+      ["sights mount", 1],
+      ["underbarrel mount", 1]
+    ]
   }
 ]
