@@ -9,15 +9,16 @@
     "name": { "str": "pneumatic assault rifle" },
     "description": "A multistroke pneumatic rifle handcrafted from scrap.  It is very quiet and deadly.",
     "price": 240000,
+    "price_postapoc": 12000,
     "material": ["steel", "wood"],
-    "flags": ["STR_RELOAD", "RELOAD_ONE", "NON-FOULING"],
+    "flags": ["STR_RELOAD", "RELOAD_ONE", "NON_FOULING"],
     "skill": "rifle",
-    "ammo": "pebble",
+    "ammo": ["pebble"],
     "weight": "4211 g",
     "volume": "2750 ml",
     "bashing": 8,
     "to_hit": -1,
-    "ranged_damage": 15,
+    "ranged_damage": { "damage_type": "stab", "amount": 15 },
     "range": 15,
     "dispersion": 75,
     "durability": 7,
@@ -37,6 +38,9 @@
       ["stock", 1],
       ["rail mount", 1],
       ["underbarrel mount", 1]
+    ],
+    "pocket_data": [
+      { "pocket_type": "MAGAZINE", "ammo_restriction": { "pebble": 15 } }
     ]
   },
   {
