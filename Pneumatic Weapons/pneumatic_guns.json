@@ -53,15 +53,16 @@
     "name": { "str": "pneumatic bolt driver" },
     "description": "An eight-shot, revolving barrel, pneumatic bolt driver handcrafted from scrap.  It is very quiet and deadly.",
     "price": 290000,
+    "price_postapoc": 12000,
     "material": ["steel", "wood"],
-    "flags": ["RELOAD_ONE", "STR_RELOAD", "NON-FOULING"],
+    "flags": ["RELOAD_ONE", "STR_RELOAD", "NON_FOULING"],
     "skill": "rifle",
-    "ammo": "bolt",
+    "ammo": ["bolt"],
     "weight": "3110 g",
     "volume": "3 L",
     "bashing": 12,
     "to_hit": -1,
-    "ranged_damage": 20,
+    "ranged_damage": { "damage_type": "stab", "amount": 5 },
     "range": 20,
     "dispersion": 30,
     "durability": 7,
@@ -77,6 +78,9 @@
       ["stock", 1],
       ["rail mount", 1],
       ["underbarrel mount", 1]
+    ],
+    "pocket_data": [
+      { "pocket_type": "MAGAZINE", "ammo_restriction": { "bolt": 8 } }
     ]
   },
   {
@@ -90,14 +94,15 @@
     "description": "A double-barreled pneumatic air shotgun handcrafted from scrap.  Though it's firepower is lacking compared to more conventional shotguns, this thing can still pack quite a punch.  That is, if your target is directly in front of you.",
     "price": 220000,
     "material": ["steel", "wood"],
-    "flags": ["RELOAD_ONE", "STR_RELOAD", "NON-FOULING"],
+    "flags": ["RELOAD_ONE", "STR_RELOAD", "NON_FOULING"],
     "skill": "shotgun",
-    "ammo": "shotcanister",
+    "ammo": ["shotcanister"],
     "weight": "3410 g",
     "volume": "2500 ml",
+    "price_postapoc": 12000,
     "bashing": 8,
     "to_hit": -1,
-    "ranged_damage": 15,
+    "ranged_damage": { "damage_type": "stab", "amount": 15 },
     "range": 3,
     "dispersion": 350,
     "durability": 7,
@@ -117,6 +122,9 @@
       ["stock", 1],
       ["rail mount", 1],
       ["underbarrel mount", 1]
+    ],
+    "pocket_data": [
+      { "pocket_type": "MAGAZINE", "ammo_restriction": { "shotcanister": 2 } }
     ]
   },
   {
@@ -129,15 +137,16 @@
     "weight": "11500 g",
     "volume": "4500 ml",
     "price": 900000,
+    "price_postapoc": 9000,
     "to_hit": -1,
     "bashing": 12,
     "material": ["steel", "plastic"],
     "symbol": "(",
     "color": "dark_gray",
-    "ammo": "metal_rail",
+    "ammo": ["metal_rail"],
     "skill": "rifle",
     "range": 40,
-    "ranged_damage": 40,
+    "ranged_damage": { "damage_type": "stab", "amount": 40 },
     "dispersion": 100,
     "durability": 7,
     "clip_size": 10,
@@ -154,7 +163,10 @@
       ["underbarrel", 1]
     ],
     "ammo_effects": ["INCENDIARY", "TRAIL"],
-    "flags": ["RELOAD_ONE"]
+    "flags": ["RELOAD_ONE"],
+    "pocket_data": [
+      { "pocket_type": "MAGAZINE", "ammo_restriction": { "metal_rail": 10 } }
+    ]
   },
   {
     "id": "rebar_rifle",
@@ -166,12 +178,13 @@
     "weight": "4213 g",
     "volume": "2500 ml",
     "price": 550000,
+    "price_postapoc": 6000,
     "to_hit": -3,
     "bashing": 10,
     "material": ["steel", "wood"],
     "symbol": "(",
     "color": "brown",
-    "ammo": "metal_rail",
+    "ammo": ["metal_rail"],
     "skill": "rifle",
     "dispersion": 90,
     "durability": 6,
@@ -187,7 +200,10 @@
       ["rail mount", 1],
       ["underbarrel mount", 1]
     ],
-    "ammo_effects": ["INCENDIARY", "TRAIL"]
+    "ammo_effects": ["INCENDIARY", "TRAIL"],
+    "pocket_data": [
+      { "pocket_type": "MAGAZINE", "ammo_restriction": { "metal_rail": 1 } }
+    ]
   },
   {
     "id": "mininuke_launcher",
@@ -199,10 +215,11 @@
     "name": { "str": "mininuke launcher" },
     "description": "A powerful handheld launcher handcrafted from scrap.  Made to launch modified handheld nuclear weapons, it is an exceedingly powerful weapon.",
     "price": 750000,
+    "price_postapoc": 750,
     "material": ["aluminum", "wood"],
     "flags": ["STR_RELOAD", "NEVER_JAMS"],
     "skill": "launcher",
-    "ammo": "mininuke_mod",
+    "ammo": ["mininuke_mod"],
     "weight": "11260 g",
     "volume": "2750 ml",
     "bashing": 12,
@@ -218,6 +235,9 @@
       ["rail mount", 1],
       ["sights mount", 1],
       ["underbarrel mount", 1]
+    ],
+    "pocket_data": [
+      { "pocket_type": "MAGAZINE", "ammo_restriction": { "mininuke_mod": 1 } }
     ]
   }
 ]
